@@ -1,4 +1,8 @@
 # maccms10
+基于MACCMSv10版本 采用MariaDB数据库 支持docker一键部署 仅供学习用途 请勿公网搭建
+Based on Maccmsv10 + MariaDB database
+~ Only for learning purpose ~
+
 
 # dockerhub
 https://hub.docker.com/repository/docker/gs0245/maccms10

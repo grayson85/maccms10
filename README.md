@@ -14,6 +14,21 @@ https://hub.docker.com/repository/docker/gs0245/maccms10
 run -v /opt/maccms10:/data -p 7878:7878 gs0245/maccms10
 ```
 
+# docker-compose
+```sh
+version: '3.3'
+services:
+    maccms10:
+        volumes:
+            - '/mnt/storage/docker/maccms_test:/data'
+            # - '/mnt/storage/docker/maccms_test/template:/opt/maccms10/template' (optional - 方便更改模板)
+        ports:
+            - '7878:7878'
+        image: gs0245/maccms10
+        #network_mode: host (optional)
+        restart: unless-stopped
+```
+
 管理后台 http://127.0.0.1:7878/admin123.php 
 
 用户名 admin
